@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <router-view/>
+    <transition mode="out-in">
+      <router-view/>
+    </transition>
   </div>
 </template>
 
@@ -74,6 +76,40 @@ var {
 }
 
 html {
-  font-family: Roboto, Arial, sans-serif;
+  font-family: 'Averia Libre', 'Cutive Mono', Arial, Helvetica, sans-serif;
+  height: 100%;
+}
+
+body {
+  background-image: url('./assets/img/index_bg.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+}
+
+#app {
+  padding: 20px;
+}
+
+.v-enter-to,
+.v-leave {
+  opacity: 1;
+  transform: none;
+  
+}
+
+.v-enter,
+.v-leave-to {
+  opacity: 0;
+  transform: translate3d(0, 50%, 0)
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: .3s;
 }
 </style>
