@@ -105,7 +105,7 @@ body {
 .v-enter,
 .v-leave-to {
   opacity: 0;
-  transform: translate3d(0, 50%, 0)
+  transform: translate3d(0, 5%, 0)
 }
 
 .v-enter-active,
