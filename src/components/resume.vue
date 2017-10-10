@@ -1,8 +1,10 @@
 <template>
   <div class="resume">
-    <h1><router-link tag="a" to="/resume">
+    <h1>
+      <router-link tag="a" to="/resume">
         Resume
-      </router-link></h1>
+      </router-link>
+    </h1>
     <div class="wrap">
       <ul>
         <li>
@@ -16,7 +18,7 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 .resume {
   height: 100%;
   display: flex;

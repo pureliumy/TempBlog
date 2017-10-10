@@ -100,7 +100,6 @@ body {
 .v-leave {
   opacity: 1;
   transform: none;
-  
 }
 
 .v-enter,
