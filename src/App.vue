@@ -78,6 +78,7 @@ var {
 html {
   font-family: 'Averia Libre', 'Cutive Mono', Arial, Helvetica, sans-serif;
   height: 100%;
+  background-color: rgba(5, 5, 40);
 }
 
 body {

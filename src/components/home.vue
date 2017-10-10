@@ -88,6 +88,7 @@ li:hover a {
   padding: 16px;
   margin-left: -16px;
   background: rgba(0, 0, 0, .2);
+  background-clip: padding-box;
   letter-spacing: 2px;
 }
 
