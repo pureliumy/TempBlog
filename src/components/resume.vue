@@ -6,10 +6,10 @@
     <div class="wrap">
       <ul>
         <li>
-          <a href="#">Web version</a>
+          <a href="/resume/index.html">Online browse</a>
         </li>
         <li>
-          <a href="#">PDF download</a>
+          <a href="/resume/resume.pdf">PDF download</a>
         </li>
       </ul>
     </div>
