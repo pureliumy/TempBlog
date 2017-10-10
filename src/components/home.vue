@@ -6,11 +6,11 @@
       </router-link>
     </h1>
     <ul>
-      <li>
-        <router-link to="/blog" tag="a">Blog</router-link>
+      <li @mouseenter="coming = true" @mouseleave="coming = false">
+        <router-link to="/" tag="a">Blog</router-link>
       </li>
-      <li>
-        <router-link to="/workshop" tag="a">Workshop</router-link>
+      <li @mouseenter="coming = true" @mouseleave="coming = false">
+        <router-link to="/" tag="a">Workshop</router-link>
       </li>
       <li class="contact" @mouseenter="showContact = true" @mouseleave="showContact = false">
         <a href="#">Contact</a>
@@ -28,6 +28,11 @@
       <li>
         <router-link to="/resume" tag="a">Resume</router-link>
       </li>
+      <transition name="fade">
+        <div class="coming" v-if="coming">
+          <p>COMING SOON…</p>
+        </div>
+      </transition>
     </ul>
   </div>
 </template>
@@ -38,7 +43,8 @@ export default {
   data () {
     return {
       msg: 'Liumy',
-      showContact: false
+      showContact: false,
+      coming: false
     }
   }
 }
@@ -87,8 +93,8 @@ li:hover a {
   top: 100%;
   padding: 16px;
   margin-left: -16px;
-  background: rgba(0, 0, 0, .2);
-  background-clip: padding-box;
+  background: rgba(0, 0, 0, .1);
+  background-clip: content-box;
   letter-spacing: 2px;
 }
 
@@ -98,6 +104,7 @@ li:hover a {
 }
 
 ul {
+  position: relative;
   list-style-type: none;
   padding: 0;
   margin-left: -20px;
@@ -111,6 +118,16 @@ li {
 
 a {
   color: #111;
+}
+
+.coming {
+  position: absolute;
+  top: 80px;
+  margin-left: 20px;
+}
+
+.coming p {
+  font-size: 14px;
 }
 
 .fade-enter-to,
