@@ -8,10 +8,10 @@
     <div class="wrap">
       <ul>
         <li>
-          <a href="/resume/index.html">Online browse</a>
+          <a href="/resume.html">Online browse</a>
         </li>
         <li>
-          <a href="/resume/resume.pdf">PDF download</a>
+          <a href="/resume.pdf">PDF download</a>
         </li>
       </ul>
     </div>

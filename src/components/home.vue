@@ -13,7 +13,7 @@
         <router-link to="/" tag="a">Workshop</router-link>
       </li>
       <li class="contact" @mouseenter="showContact = true" @mouseleave="showContact = false">
-        <a href="#">Contact</a>
+        <router-link to="/" tag="a">Contact</router-link>
         <transition name="fade">
           <div v-show="showContact" class="wrap">
             <p>Phone: 15687889199</p>
